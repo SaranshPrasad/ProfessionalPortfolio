@@ -30,6 +30,7 @@ def load_user(user_id):
     return db.get_or_404(User, user_id)
 #models
 class User(db.Model, UserMixin):
+    __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(255), unique=True)
     password = db.Column(db.String(255))
