@@ -100,14 +100,12 @@ def home():
     return render_template("index.html", is_edit=False, reviews=rev)
 
 @app.route('/edit')
-@login_required
 def edit_page():
     result = db.session.execute(db.select(Reviews))
     rev = result.scalars().all()
     return render_template("index.html", is_edit=True, reviews=rev)
 
 @app.route("/delete/<int:review_id>")
-@admin_only
 def delete_post(review_id):
     post_to_delete = db.get_or_404(Reviews, review_id)
     db.session.delete(post_to_delete)
