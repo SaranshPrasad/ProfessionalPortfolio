@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="static/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="static/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="static/assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="static/assets/css/styles.css">
+
+    <title> Saransh's Portfolio </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Saransh</a>
+
+
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Welcome !</span>
+            <h3 class="section__title">Reviews Page</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Enter Your Thoughts About Me</h3>
+
+                    <form action="/reviews" class="contact__form" method="post">
+                        <div class="contact__form-div">
+                            <label for="name" class="contact__form-tag">Name</label>
+                            <input id="name" type="text" placeholder="Enter your name" class="contact__form-input" name="name">
+                        </div>
+
+                       <div class="contact__form-div contact__form-area">
+                            <label for="message" class="contact__form-tag">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+
+                        <button type="submit" class="button">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    <!--=============== FOOTER ===============-->
+ <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Saransh Bari</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="{{ url_for('home')}}" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:saranshprasad08@gmail.com" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://github.com/SaranshPrasad" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/saransh-bari-1a8b45283/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.instagram.com/___saransh.__/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Saransh Bari 2004. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="static/assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="static/assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="static/assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="static/assets/js/main.js"></script>
+</body>
+
+</html>
